@@ -11,6 +11,8 @@ class AppClass extends React.Component {
             direccion: "",
             soltero: true
         }
+
+        //this.saludo = this.saludo.bind(this);
     }
 
     /* 
@@ -18,7 +20,7 @@ class AppClass extends React.Component {
         name: 'Luis Rodriguez'
     }
     */
-    saludo() {
+    saludo = () => {
         console.log(this.state.name);
         this.setState({
             name: "Leslie",
@@ -46,9 +48,7 @@ class AppClass extends React.Component {
                 <p>{this.props.name}</p>
                 <p>{this.state.name}</p>
                 <p>
-                    <button onClick={() => {
-                        this.saludo()
-                    }}>
+                    <button onClick={this.saludo}>
                         Cambiar Nombre
                     </button>
                 </p>

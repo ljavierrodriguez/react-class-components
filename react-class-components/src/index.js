@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 //import AppFunc from './AppFunc';
-import AppClass from './AppClass';
+import Test from './Test';
 
 ReactDOM.render(
-    <AppClass name="Orlando Monroy" />,
+    <Test name="Orlando Monroy" />,
   document.getElementById('root')
 );
 
